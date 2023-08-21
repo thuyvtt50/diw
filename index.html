@@ -1,0 +1,188 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/templateFW.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Yubee ice cream</title>
+<!-- InstanceEndEditable -->
+   <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round" rel="stylesheet"> 
+<link rel="stylesheet" href="../../../ARENA/DIW-T357/DIW-07-BEGIN/css/bootstrap.css" type="text/css">
+<link rel="stylesheet" href="../../../ARENA/DIW-T357/DIW-07-BEGIN/css/main-style.css" type="text/css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="../../../ARENA/DIW-T357/DIW-07-BEGIN/css/hover.css" type="text/css">
+<link rel="shortcut icon" href="../../../ARENA/DIW-T357/DIW-07-BEGIN/images/icon-hightqality1.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../../ARENA/DIW-T357/DIW-07-BEGIN/css/shop.css" type="text/css">
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+    <!-- popup shopping cart-->
+<div class="modal fade" id="shopping-box">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				 <h4 class="modal-title">Giỏ hàng</h4>
+				<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+ 			</div>
+			  <div class="modal-body">
+          <div class="cart-row d-flex">
+			  <span class="cart-item cart-header cart-column">ITEM</span>
+			  <span class="cart-price cart-header cart-column">PRICE</span> 
+			  <span class="cart-quantity cart-header cart-column">QUANTITY</span> 
+			</div>
+          <div class="cart-items"> </div>
+          <div class="cart-total"> <strong class="cart-total-title">Total</strong><span> $</span> <span class="cart-total-price text-danger">0</span> </div>
+        <!--  <button class="btn btn-primary btn-purchase" type="button" onClick="getURL()">Thanh toán</button>-->
+				  <button type="button" class="btn btn-primary btn-purchase" onClick="MM_goToURL('parent','html/THANHTOAN.html');return document.MM_returnValue">Thanh toán</button> 
+        </div>
+		<div class="modal-footer">
+			<button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+				
+			
+		  </div>
+		</div>
+	
+	
+	</div>
+	
+	
+	</div>	
+	
+<!----- serach box------>
+    
+    <div class="modal" id="search-modal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Search - box</h3>
+                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                 <div class="modal-body">
+                     <form class="d-flex">
+                            <input type="text" name="search" class="form-control ">
+                            <button type="button" class="btn btn-danger">Search</button>
+                      </form>
+                </div>
+                 <div class="modal-footer">
+                   <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                 </div>
+            </div>
+       </div>
+    </div>
+    <!-----hết modal search box------------------>
+<nav class="py-4 navbar navbar-expand-lg navbar-light shadow-sm fixed-top">
+  <div class="container"> 
+     <a href="../../../ARENA/DIW-T357/DIW-07-BEGIN/index.html" class="navbar-brand"><img src="../../../ARENA/DIW-T357/DIW-07-BEGIN/images/logo.png"></a>
+    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span> 
+      </button>
+    <div class="navbar-collapse collapse" id="menu">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><a href="../../../ARENA/DIW-T357/DIW-07-BEGIN/index.html" class="nav-link hvr-bounce-to-top">Home</a></li>
+        <li class="nav-item"><a href="../../../ARENA/DIW-T357/DIW-07-BEGIN/about.html" class="nav-link hvr-bounce-to-top">About</a></li>
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle hvr-bounce-to-top" data-bs-toggle="dropdown">Shop</a>
+          <div class="dropdown-menu mega-menu shadow">
+         <div class="row">
+              <div class="col-12 col-md-6 col-lg-3">
+             <h3>CONES</h3>
+             <a href="../../../ARENA/DIW-T357/DIW-07-BEGIN/shop1.html" class="dropdown-item hvr-underline-from-center">Waffle cone</a>
+                 <a href="#" class="dropdown-item hvr-underline-from-center">Waffle cone</a>
+                   <a href="#" class="dropdown-item hvr-underline-from-center">Waffle cone</a>
+                   <a href="#" class="dropdown-item hvr-underline-from-center">Waffle cone</a>
+                   <a href="#" class="dropdown-item hvr-underline-from-center">Waffle cone</a>
+             </div>
+               <div class="col-12 col-md-6 col-lg-3">
+             <h3>CANDY</h3>
+             <a href="../../../ARENA/DIW-T357/DIW-07-BEGIN/shop2.html" class="dropdown-item">Italian candy</a>
+                 <a href="#" class="dropdown-item hvr-underline-from-center">Waffle cone</a>
+                   <a href="#" class="dropdown-item hvr-underline-from-center">Waffle cone</a>
+                   <a href="#" class="dropdown-item hvr-underline-from-center">Waffle cone</a>
+                   <a href="#" class="dropdown-item hvr-underline-from-center">Waffle cone</a>
+             </div>
+               <div class="col-12 col-md-6 col-lg-3">
+             <h3>TALL CUP</h3>
+             <a href="../../../ARENA/DIW-T357/DIW-07-BEGIN/shop3.html" class="dropdown-item hvr-underline-from-center">Italian candy</a>
+                 <a href="#" class="dropdown-item hvr-underline-from-center ">Waffle cone</a>
+                   <a href="#" class="dropdown-item hvr-underline-from-center">Waffle cone</a>
+                   <a href="#" class="dropdown-item hvr-underline-from-center">Waffle cone</a>
+                   <a href="#" class="dropdown-item hvr-underline-from-center">Waffle cone</a>
+             </div>
+              <div class="col-12 col-md-6 col-lg-3">
+             <h3>TODAY ONLY !</h3>
+             <a href="#">
+                  <img src="../../../ARENA/DIW-T357/DIW-07-BEGIN/images/mega-img.png" class="img-fluid">
+                  </a>
+             </div>
+              </div>
+            <div class="row ">
+              <div class="col-md-6 mt-4"><img src="../../../ARENA/DIW-T357/DIW-07-BEGIN/images/mega-2.jpg" class="img-fluid"></div>
+                 <div class="col-md-6 mt-4"><img src="../../../ARENA/DIW-T357/DIW-07-BEGIN/images/mega-3.jpg" class="img-fluid"></div>
+              </div>
+            
+            </div>
+          
+          
+          
+          </li>
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle hvr-bounce-to-top" data-bs-toggle="dropdown">Services</a>
+          <div class="dropdown-menu">
+               <a href="../../../ARENA/DIW-T357/DIW-07-BEGIN/our-staff.html" class="dropdown-item hvr-underline-from-center">Our Staff</a>
+               <a href="../../../ARENA/DIW-T357/DIW-07-BEGIN/recipies.html" class="dropdown-item hvr-underline-from-center">Our Recipies</a>
+                <a href="../../../ARENA/DIW-T357/DIW-07-BEGIN/our-prices.html" class="dropdown-item hvr-underline-from-center">Our Prices</a>
+           </div>
+         </li>
+        <li class="nav-item"><a href="../../../ARENA/DIW-T357/DIW-07-BEGIN/blog.html" class="nav-link hvr-bounce-to-top">Blogs</a></li>
+        <li class="nav-item"><a href="../../../ARENA/DIW-T357/DIW-07-BEGIN/contact.html" class="nav-link hvr-bounce-to-top">Contact</a></li>
+      </ul>
+      <div class="navbar-text"> 
+          <span class="material-icons" data-bs-target="#search-modal" data-bs-toggle="modal">search</span> 
+          <span class="material-icons" data-bs-target="#sign-box" data-bs-toggle="modal">person</span>
+          
+          <span class="material-icons"  data-bs-target="#shopping-box" data-bs-toggle="modal">shopping_cart</span>
+          <span class="badge bg-danger" id="sl">0</span>
+            
+     </div>
+    </div>
+  </div>
+</nav>
+<!-- InstanceBeginRepeat name="thichde-kbo" --><!-- InstanceBeginRepeatEntry -->
+<div class="tieudetrang"> <!-- InstanceBeginEditable name="tentrang" -->
+  <p> Tên Trang</p>
+<!-- InstanceEndEditable --> </div>
+<!-- InstanceEndRepeatEntry --><!-- InstanceEndRepeat --> <!-- InstanceBeginEditable name="main" -->
+<main></main>
+    <!-- InstanceEndEditable -->
+    <footer class="py-4 bg-dark text-light">
+    <div class="container">
+        <div class="row justify-content-between">
+        <div class="col-md-4">
+            <img src="../../../ARENA/DIW-T357/DIW-07-BEGIN/images/logo-footer.png">
+            <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, expedita explicabo, ducimus eum a tempora soluta perspiciatis</p>
+            
+          </div>
+           <div class="col-md-3 pt-4">
+            <h4 class="text-light">Open Hour</h4>
+            <p><b>Thứ 2 - thứ 6</b> <br> 8:00am - 18:00pm</p>
+             <p><b>Thứ 7 - Sunday</b> <br> 10:00am - 16:00pm</p>
+          </div>
+               <div class="col-md-4 pt-4">
+             <h4 class="text-light">Find us</h4>
+                   <p><b>Address: </b> 75/68 Hoang Sa F9, Q3, Tp.HCM</p>
+            
+            </div>
+      </div>     </div>
+        <div class="row border-top border-secondary py-3">
+        <p class="text-center">Copyright © 2020 Yupee Store.  </p>
+        
+        </div>
+   
+    
+</footer>
+<script src="../../../ARENA/DIW-T357/DIW-07-BEGIN/js/bootstrap.bundle.js"></script>
+    <script src="../../../ARENA/DIW-T357/DIW-07-BEGIN/js/shop.js"></script>
+</body>
+<!-- InstanceEnd --></html>
